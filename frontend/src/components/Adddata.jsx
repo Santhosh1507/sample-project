@@ -57,7 +57,7 @@ const Adddata = () => {
               name="name"
               value={name.name}
               onChange={handleChange}
-              className='mt-1 block w-full px-3 py-2 border  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 block w-full px-3 py-2 border text-black border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
             />
           </div>
           <div className='mb-4'>
@@ -68,7 +68,7 @@ const Adddata = () => {
               name="price"
               value={name.price}
               onChange={handleChange}
-              className='mt-1 block w-full px-3 py-2 border  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 block w-full px-3 py-2 border text-black border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
             />
           </div>
           <div className='mb-6'>
@@ -79,7 +79,7 @@ const Adddata = () => {
               name="image"
               value={name.image}
               onChange={handleChange}
-              className='mt-1 block w-full px-3 py-2 border  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 block w-full px-3 py-2 border text-black border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
             />
           </div>
           <button

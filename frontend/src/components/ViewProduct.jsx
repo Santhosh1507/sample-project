@@ -52,18 +52,18 @@ const ViewProduct = () => {
     }) // Dependency array fixed to run only once on mount
   
     return (
-      <div className='bg-gray-800 mt-10 mb-20'>
-        <div className='flex flex-col items-center pt-14 w-11/12 md:w-4/5 lg:w-3/4 mx-auto px-4'>
+      <div className=' mt-10 '>
+        <div className='flex flex-col items-center pt-14 w-11/12 md:w-4/5 lg:w-3/4 mx-auto px-4 '>
           {products.length === 0 ? (
             <p className='text-xl text-gray-300'>No Products Found</p>
           ) : (
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mb-20'>
               {products.map((item) => (
                 <div key={item._id} className='border border-gray-300 rounded-lg shadow-lg p-4 flex flex-col items-center'>
                   <img 
                     src={item.image} 
                     alt={item.name} 
-                    className='w-full h-40 object-cover mb-4 rounded-t-lg' 
+                    className='w-full h-40 object-cover mb-4 rounded-t-lg transition-all duration-300 hover:scale-105' 
                   />
                   <div className='flex flex-row justify-between items-center w-full'>
                     <div className='flex flex-row gap-4 items-center'>

@@ -37,7 +37,7 @@ const Editdata = ({ product, close }) => {
 
   return (
     <div className='fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center'>
-      <div className='p-6 rounded-lg shadow-lg max-w-md w-full'>
+      <div className='p-6 rounded-lg shadow-lg max-w-md w-full bg-gray-800'>
         <h2 className='text-2xl font-semibold mb-4 text-white'>Edit Product</h2>
         <form onSubmit={handleSubmit}>
           <div className='mb-4'>
@@ -48,7 +48,7 @@ const Editdata = ({ product, close }) => {
               name="name"
               value={editedProduct.name}
               onChange={handleChange}
-              className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 block w-full px-3 py-2 border text-black border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
             />
           </div>
           <div className='mb-4'>
@@ -59,7 +59,7 @@ const Editdata = ({ product, close }) => {
               name="price"
               value={editedProduct.price}
               onChange={handleChange}
-              className='mt-1 block w-full px-3 py-2 border  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 block w-full px-3 py-2 border text-black border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
             />
           </div>
           <div className='mb-4'>
@@ -70,7 +70,7 @@ const Editdata = ({ product, close }) => {
               name="image"
               value={editedProduct.image}
               onChange={handleChange}
-              className='mt-1 block w-full px-3 py-2 border  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 block w-full px-3 py-2 border text-black  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
             />
           </div>
           <button
@@ -82,7 +82,7 @@ const Editdata = ({ product, close }) => {
           <button
             type="button"
             onClick={close}
-            className='w-full mt-2 bg-gray-300  py-2 px-4 rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'
+            className='w-full mt-2 bg-gray-300  py-2 px-4 text-black rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'
           >
             Cancel
           </button>
