@@ -5,10 +5,11 @@ import router from './Routes/user.route.js';
 import path from 'path';
 import dotenv from 'dotenv';
 
-dotenv.config();
+
 const app = express();
 app.use(express.json());
 app.use(cors());
+dotenv.config();
 
 const __dirname = path.resolve();
 const PORT = process.env.PORT || 5000; // Use environment variable for the port
